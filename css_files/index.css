@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #4d5156;
+    font-family: poppins;
+}
+body{
+    background: #f7f7f7;
+}
+.sidenav{
+    width: 150px;
+    height: auto;
+    background-color: #fcf6f5ff;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+    overflow-y: inherit;
+}
+.sidenav a{
+    display: block;
+    color: #990011ff;
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+    padding: 15px 20px 10px 10px;
+    transition: ease-in-out 400ms;
+    border-bottom: 1px solid rgba(184, 184, 184, 0.171);
+}
+.sidenav a:hover{
+    color: #fcf6f5ff;
+    background: #990011ff;
+}
+.grid-totalUsers{
+    background: white;
+    color: #990011ff;
+    border-radius: 10px;
+    border: 2px solid #990011ff;
+    width: 200px;
+    height: 80px;
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    left: 250px;
+    text-align: center;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.grid-totalStudents{
+    background: white;
+    color: #990011ff;
+    border-radius: 10px;
+    border: 2px solid #990011ff;
+    width: 200px;
+    height: 80px;
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    left: 300px;
+    text-align: center;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.grid-totalTeachingStaff{
+    background: white;
+    color: #990011ff;
+    border-radius: 10px;
+    border: 2px solid #990011ff;
+    width: 200px;
+    height: 80px;
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    left: 350px;
+    text-align: center;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.grid-totalNonTeachingStaff{
+    background: white;
+    color: #990011ff;
+    border-radius: 10px;
+    border: 2px solid #990011ff;
+    width: 200px;
+    height: 80px;
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    left: 400px;
+    text-align: center;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.dashboard{
+    background: #990011ff;
+    width: 300px;
+    color: #fcf6f5ff;
+    font-weight: 500;
+    border-radius: 2px 2px 30px 30px;
+    margin-left: 250px;
+    letter-spacing: 2px;    
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.eventDashboard{
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 800px;
+    text-align: justify;
+    display: inline-block;
+    position: absolute;
+    left: 340px;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.grid-item span{
+    font-size: 30px;
+    color: #990011ff;
+    font-weight: bolder;
+    padding: 20px 10px 0 10px;
+}
+.grid-item h6{
+    color: #990011ff;
+}
+.eventDashboard h2{
+    color: #fcf6f5ff;
+    background: #990011ff;
+    width: 310px;
+    padding: 8px;
+    margin: 0 0 30px 0;
+    border-radius: 5px 5px 10px 10px;
+}
+.eventDashboard form{
+    padding: 0;
+    margin: 10px 50px 0 50px;
+}
+.sidenav .name{
+    font-size: 12px;
+    color: #990011ff;
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+}
+.sidenav .welcome{
+    color: #990011ff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    font-weight: bolder;
+    display: block;
+}
+.sidenav input[type="image"]{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-left: 40px;
+}
+
+
+
+
+
+@media (max-width: 575.98px) {
+    .sidenav{
+        position: absolute;
+    }
+    .grid-totalUsers{
+        display: block;
+        left: 150px;
+        width: 400px;
+        margin: 10px 0;
+    }
+    .grid-totalStudents{
+        display: block;
+        left: 150px;
+        width: 400px;
+        margin: 10px 0; 
+    }
+    .grid-totalTeachingStaff{
+        display: block;
+        left: 150px;
+        width: 400px;
+        margin: 10px 0;
+    }
+    .grid-totalNonTeachingStaff{
+        display: block;
+        left: 150px;
+        width: 400px;
+        margin: 10px 0;
+    }
+    .eventDashboard{
+        left: 5px;
+        width: 565px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .sidenav{
+        height: auto;
+    }
+    .grid-totalUsers{
+        display: block;
+        left: 150px;
+        width: 600px;
+        margin: 10px 0;
+    }
+    .grid-totalStudents{
+        display: block;
+        left: 150px;
+        width: 600px;
+        margin: 10px 0; 
+    }
+    .grid-totalTeachingStaff{
+        display: block;
+        left: 150px;
+        width: 600px;
+        margin: 10px 0;
+    }
+    .grid-totalNonTeachingStaff{
+        display: block;
+        left: 150px;
+        width: 600px;
+        margin: 10px 0;
+    }
+    .eventDashboard{
+        left: 5px;
+        width: 762px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .sidenav{
+        position: relative;
+        left: 0;
+        height: auto;
+        width: 970px;
+    }
+    .eventDashboard{
+        width: 980px;
+        left: 0;
+    }
+    .grid-totalUsers{
+        left: 0;
+        margin:  10px;
+    }
+    .grid-totalStudents{
+        left: 0;
+        margin: 10px;
+    }
+    .grid-totalTeachingStaff{
+        left: 0;
+        margin: 10px;
+    }
+    .grid-totalNonTeachingStaff{
+        left: 0;
+        margin: 10px;  
+    }
+    .grid-item{
+        width: 990px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .sidenav{
+        width: 1199px;
+        position: relative;
+        left: 0;
+    }
+    .grid-item{
+        width: 1199px;
+        margin: auto;
+        position: relative;
+    }
+    .grid-totalUsers{
+        position: absolute;
+        left: 100px;
+        width: 400px;
+    }
+    .grid-totalTeachingStaff{
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        width: 400px;
+    }
+    .grid-totalNonTeachingStaff{
+        position: absolute;
+        left: 600px;
+        width: 400px;
+        top: 100px;
+    }
+    .grid-totalStudents{
+        position: absolute;
+        left: 600px;
+        width: 400px;
+    }
+    .eventDashboard{
+        position: relative;
+        left: 0;
+        top: 100px;
+        width: 1199px;
+    }
+}
+
+@media (min-width: 1200px) {
+}

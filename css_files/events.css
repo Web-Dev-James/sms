@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #4d5156;
+    font-family: poppins;
+    caret-color: dodgerblue;
+}
+body{
+    /* background-image: url('../php_files/img/events.jpg'); */
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+.eventBody{
+    width: 800px;
+    height: 150px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-areas: "myeventdate myevent";
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+    position: relative;
+    border-radius: 2px;
+
+}
+.myeventdate{
+    grid-area: myeventdate;
+    width: 150px;
+    background: #990011ff;
+    height: 140px;
+    margin: 5px 5px;
+}
+.myeventdate #mydate{
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(40%);
+}
+.myevent{
+    grid-area: myevent;
+    width: 650px;
+    padding: 40px;
+}
+.myevent #mytitle{
+    color: #4d5156;
+    text-align: center;
+    margin: auto;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.sidenav{
+    width: 150px;
+    height: 100vh;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-y: inherit;
+    color: #990011ff;
+}
+.sidenav a{
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+    padding: 15px 20px 10px 10px;
+    transition: ease-in-out 400ms;
+    border: 1px solid rgba(184, 184, 184, 0.315);
+}
+.sidenav a:hover{
+    background: #990011ff;
+    color: #fcf6f5ff;
+}
+.topnav{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+    border: 1px solid rgba(184, 184, 184, 0.315);
+    background-color: #990011ff;
+}
+.topnav h4{
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+.main{
+    background: #fcf6f5ff;
+    border-radius: 10px;
+    position: absolute;
+    width: 800px;
+    height: auto;
+    top: 150px;
+    left: 150px;
+    padding: 20px;
+    margin: 0 150px;
+}
+.main h3{
+    padding: 20px 0 20px 20px;
+}
+table{
+    border: 1px solid lightsalmon;
+    border-radius: 5px;
+    width: 100%;
+}
+td,th{
+    border-bottom: 1px solid lightsalmon;
+    border-radius: 3px;
+    padding: 10px;
+}
+.subjects{
+    padding: 10px;
+    color: #4d5156;
+    text-decoration: none;
+    font-weight: bolder;  
+}
+.subjects:hover{
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+th{
+    background: rgb(255, 197, 174);
+}
+tr:nth-child(even){
+    background-color: rgb(255, 227, 215);
+}
+tr:hover{
+    background: rgb(255, 197, 174);
+}
+.addCourse{
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+    background: #FF5C3A;
+    border: none;
+}
+.addCourse:hover{
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.addcourseDivision{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    background: #fcf6f5ff;
+    width: 800px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.addcourseDivision label{
+    padding: 20px;
+    margin-top: 20px;
+    height: 50px;
+    font-weight: bolder;
+}
+.addcourseDivision input, select{
+    padding: 10px;
+    width: 730px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.saveCourse{
+    padding: 20px;
+    width: 40%;
+    margin: 0 10px 0 50px;
+    background: #FF5C3A;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.cancelCourse{
+    padding: 20px;
+    width: 40%;
+    border: none;
+    cursor: pointer;
+}
+.saveCourse:hover, .cancelCourse:hover{
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.actionsDropdown{
+    background-color: white;
+    z-index: 1;
+    height: auto;
+    width: 150px;
+    position: absolute;
+    top: 48px; 
+    left: 40px;
+    display: none;
+}
+.actionsDropdown button{
+    width: 100%;
+    padding: 10px 0 10px 0;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin: 0;
+    transition: all .4s ease;
+}
+.actionsDropdown button:hover{
+    background-color: #FF5C3A;
+    color: white;
+}
+/* .actions{
+    color: white;
+    background-color: #FF5C3A;
+    padding: 20px 0 12px 0;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    left: 0;
+    border: none;
+    width: 150px;
+} */
+/* .actions:hover{
+    background-color: #ff2a00;
+} */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1;
+}
+ul li{
+    float: right;
+    width: 150px;
+    height: 48px;
+    line-height: 50px;
+    background: #990011ff;
+    text-align: center;
+}
+ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    cursor: pointer;
+}
+ul li a:hover{
+    background: #fcf6f5ff;
+    color: #990011ff;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+.addform{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+    transition: .4s ease;
+}
+.addformContent{
+    background: white;  
+    width: calc(1200px - 150px);
+    height: 500px;
+    position: relative;
+    left: 150px;
+    top: 50px;
+    letter-spacing: 2px;
+}
+.addformHeader{
+    width: 100%;
+    height: 30px;
+}
+.addformHeader button{
+    float: right;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    background: #fcf6f5ff;
+    transition: .4s ease;
+}
+.addformHeader button:hover{
+    background: #990011ff;
+    color: #fcf6f5ff;
+}
+.addformBody{
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 85px);
+    background: white;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.addformFooter{
+    width: 100%;
+    height: 40px;
+}
+#saveEvent{
+    background: #fcf6f5ff;
+    border: none;
+    padding: 18px 20px 17px 20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    width: 100px;
+}
+#saveEvent:hover{
+    background: dodgerblue;
+    color: #fcf6f5ff;
+}
+#reset{
+    position: absolute;
+    left: 0;
+    padding: 18px 20px 17px 20px;
+    bottom: 0;
+    cursor: pointer;
+    border: none;
+    background: #fcf6f5ff;
+    width: 100px;
+}
+#reset:hover{
+    background: #ddd;
+}
+.addformBody input{
+    display: block;
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    width: 80%;
+    margin: 20px 100px 10px 100px;
+    padding: 0 20px 0 30px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+    letter-spacing: 2px;
+    transition: .5s ease-in-out;
+}
+.addformBody textarea{
+    padding: 30px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 80%;
+    margin: 20px 100px 10px 100px;
+    resize: none;
+    border: none;
+    caret-color: dodgerblue;
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    transition: .5s ease-in-out;
+}
+/* .addformBody input:hover, .addformBody textarea:hover{
+    
+} */
+.eventToday{
+    background: rgba(109, 107, 107, 0.041);
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    height: 500px;
+    width: calc(100% - 400px);
+    border: none;
+    border-radius: 3px;
+    cursor: default;
+    box-shadow: 5px 5px 20px 1px rgb(151, 151, 151);
+}
+.eventToday p{
+    text-align: center;
+    color:black;
+    font-size: 90px;
+    font-weight: bolder;
+    padding: 20px 0 0 0;
+    text-transform: capitalize;
+    background: linear-gradient(90deg,red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.eventToday span{
+    text-align: center;
+    font-weight: bolder;
+    margin: auto;
+    font-size: 45px;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+    background: linear-gradient(90deg,red, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#todayis{
+    font-size: 120px;
+    padding: 0 0 20px 0;
+}
+.editButton{
+    position: absolute;
+    right: 10px;
+    top: 90px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: .5s ease;
+}
+.deleteButton{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.editButton:hover, .deleteButton:hover{
+    transform: scale(1.2);
+    transform: rotate(360deg);
+}
+#mydate2{
+    background: #0b0b45;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(125%);
+}

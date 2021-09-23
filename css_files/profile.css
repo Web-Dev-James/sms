@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #4d5156;
+    font-family: poppins;
+}
+body{
+    background: #f7f7f7;
+}
+.sidenav{
+    width: 150px;
+    height: 100vh;
+    background-color: white;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+    overflow-y: inherit;
+}
+.sidenav a{
+    display: block;
+    color: rgb(51, 103, 214);
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+    padding: 5px 20px 10px 10px;
+    transition: ease-in-out 400ms;
+}
+.sidenav a:hover{
+    background: rgb(51, 103, 170);
+    color: white;
+}
+.tabs{
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto auto auto auto auto auto  auto auto auto auto;
+    position: relative;
+    top: 0;
+    left: 200px;
+    background: white;
+    width: 1130px;
+    padding: 0;
+    height: 60px;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.tabcontent{
+    display: inline-block;
+    margin: 0 0 0 0;
+    color: #4d5156;
+    cursor: pointer;
+    padding: 0;
+    transition: ease-in-out 400ms;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+.active, .tabcontent:hover{
+    background: rgb(51, 103, 214);
+    color: white;
+}
+.studentlist{
+    position: absolute;
+    left: 380px;
+    top: 200px;
+    width: 940px;
+    background: white;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+    padding: 25px;
+    border-radius: 5px;
+
+}
+thead{
+    background: rgb(51, 103, 214);
+}
+th{
+    color: white;
+}
+.formSearch{
+    position: absolute;
+    top: 120px;
+    left: 930px;
+    margin: 30px 10px 0 10px;
+}
+.formSearch input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.searchButton{
+    padding: 9px 10px 8px 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.inputFields{
+    display: block;
+    width: 400px;
+    height: 50px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 20px;
+    position: absolute;
+    text-transform: capitalize;
+}
+#submitbutton{
+    position: absolute;
+    top: 500px;
+    left: 430px;
+    height: 50px;
+    width: 400px;
+    font-weight: 500;
+}
+#submitbuttonadd{
+    position: absolute;
+    top: 500px;
+    left: 20px;
+}
+#formInput{
+    display: inline-block;
+    position: absolute;
+    padding: 20px;
+    top: 10px;
+    left: 10px;
+}
+table{
+    text-transform: capitalize;
+}
+#backButton{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+#deleteButton{
+    margin: 0 10px 0 10px;
+    width: 95%;
+    position: absolute;
+    bottom: 10px;
+    font-weight: 500;
+}
+#fname{
+    position: absolute;
+    left: 20px;
+    top: 100px;
+}
+#mname{
+    position: absolute;
+    left: 430px;
+    top: 100px;
+}
+#lname{
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+#gender{
+    left: 430px;
+    top: 200px;
+}
+#type{
+    top: 300px;
+    left: 20px;
+}
+#number{
+    top: 300px;
+    left: 430px;
+}
+#age{
+    top: 400px;
+    left: 20px;
+}
+#email{
+    top: 500px;
+    left: 20px;
+    text-transform: unset;
+}
+#access{
+    top: 400px;
+    left: 430px;
+}
+label[for="fname"]{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+label[for="mname"]{
+    position: absolute;
+    top: 70px;
+    left: 430px;
+}
+label[for="lname"]{
+    position: absolute;
+    top: 170px;
+    left: 20px;
+}
+label[for="gender"]{
+    position: absolute;
+    top: 170px;
+    left: 430px;
+}
+label[for="type"]{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+}
+label[for="number"]{
+    position: absolute;
+    top: 270px;
+    left: 430px;
+}
+label[for="age"]{
+    position: absolute;
+    top: 370px;
+    left: 20px;
+}
+label[for="email"]{
+    position: absolute;
+    top: 470px;
+    left: 20px;
+}
+label[for="access"]{
+    position: absolute;
+    top: 370px;
+    left: 430px;
+}
+.sideInfo{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    width: 450px;
+    height: 550px;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.imageDivision{
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 50%;
+    width: 50%;
+}
+.imageDivision button{
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    width: 200px;
+}
+.imageDivision h4{
+    position: absolute;
+    top: 5px;
+    right: 60px;
+}
+.imageDivision img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.imageDivision input[type='file']{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    font-size: 13px;
+    width: 210px;
+}
+.buttons{
+    margin: 0;
+    position: absolute;
+    top: 84px;
+    right: 30px;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+}
+.addstudents{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.optionGrade{
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 160px;
+    top: 59px;
+    left: 210px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.optionGrade a{
+    display: block;
+}
+#openOptionGrade {
+    font-weight: 900;
+}
+#updatebutton{
+    position: absolute;
+    top: 500px;
+    left: 430px;
+    height: 50px;
+    width: 400px;
+    font-weight: 500;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+h1{
+    margin-left: 200px;
+    background: #990011ff;
+    width: 300px;
+    padding: 0 10px 0 30px;
+    border-radius: 5px 5px 100px 100px;
+    color: #fcf6f5ff;
+}

@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #4d5156;
+    font-family: Poppins;
+}
+body{
+    background: #f7f7f7;
+}
+.sidenav{
+    width: 150px;
+    height: 100vh;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-y: inherit;
+}
+.sidenav a{
+    color: #990011ff;
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+    padding: 15px 20px 10px 10px;
+    transition: ease-in-out 400ms;
+    border: 1px solid rgba(184, 184, 184, 0.315);
+}
+.sidenav a:hover{
+    background: #990011ff;
+    color: white;
+}
+.topnav{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+    border: 1px solid rgba(184, 184, 184, 0.315);
+    background-color: #990011ff;
+}
+.topnav h4{
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    color: #fcf6f5ff;
+}
+.main{
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    top: 70px;
+    left: 100px;
+    padding: 20px;
+    margin: 0 150px;
+}
+.main h3{
+    padding: 20px 0 20px 20px;
+}
+table{
+    text-transform: capitalize;
+}
+thead tr{
+    background-color: #990011ff;
+}
+thead tr:hover{
+    background-color: #990011ff;
+}
+th{
+    color: #fcf6f5ff;
+}
+.subjects{
+    padding: 10px;
+    color: #4d5156;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.subjects:hover{
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+th{
+    background: #990011ff;
+    color: #fcf6f5ff;
+}
+tr:hover{
+    background: #fcf6f5ff;
+    color: #990011ff;
+}
+.addCourse{
+    padding: 10px 20px;
+    margin: 10px;
+    color: #fcf6f5ff;
+    background: #990011ff;
+    border: none;
+}
+.addCourse:hover{
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.addcourseDivision{
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 300px;
+    background: white;
+    width: 800px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.addcourseDivision label{
+    padding: 20px;
+    margin-top: 20px;
+    height: 50px;
+    font-weight: bolder;
+}
+.addcourseDivision input, select{
+    padding: 10px;
+    width: 730px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.saveCourse{
+    padding: 20px;
+    width: 40%;
+    margin: 0 10px 0 50px;
+    background: #990011ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.cancelCourse{
+    padding: 20px;
+    width: 40%;
+    border: none;
+    cursor: pointer;
+}
+.saveCourse:hover, .cancelCourse:hover{
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}

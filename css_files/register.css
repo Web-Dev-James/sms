@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #4d5156;
+    letter-spacing: 2px;
+    font-family: poppins;
+}
+body{
+    background: url(img/loginbackground.jpg);
+}
+.loginbutton{
+    margin: 0 20px 20px 20px;
+    background-color: rgb(51, 103, 214);
+    color: white;
+    font-weight: 500;
+    width: 90%;
+}
+.formLogin{
+    background: white;
+    margin: auto;
+    width: 900px;
+    height: auto;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.formLogin input, .formLogin select{
+    width: 90%;
+    display: block;
+    height: 50px;
+    margin: 0 0 20px 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: 500px;
+    letter-spacing: 2px;
+}
+#fname, #mname, #lname, #gender{
+    width: 50%;
+}
+#gender, #type, #access{
+    padding: 0;
+}
+#imageUser{
+    width: 21%;
+    margin: 0;
+    top: 390px;
+    left: 750px;
+    height: 30px;
+    padding: 0;
+    position: absolute;
+
+}
+.spanInvalid{
+    color: red;
+    position: absolute;
+    top: 120px;
+    left: 500px;
+}
+.registerbutton{
+    margin: 0 20px 20px 20px;
+    color: white;
+    background: #209D1A;
+    font-weight: 500;
+    width: 90%;
+}

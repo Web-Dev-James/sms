@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #4d5156;
+    font-family: Poppins;
+    caret-color: dodgerblue;
+}
+body{
+    background: #f7f7f7;
+}
+.sidenav{
+    width: 150px;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    overflow-y: inherit;
+}
+.sidenav a{
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    color: #4d5156;
+    text-decoration: none;
+    padding: 15px 20px 10px 10px;
+    transition: ease-in-out 400ms;
+    border: 1px solid rgba(184, 184, 184, 0.315);
+}
+.sidenav a:hover{
+    background: #990011ff;
+    color: #fcf6f5ff;
+}
+.tabs{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color: #990011ff;
+}
+.tabs h3{
+    color: #fcf6f5ff;
+    padding: 8px;
+    width: 460px;
+    margin: 0;
+}
+.studentlist{
+    position: absolute;
+    left: 200px;
+    top: 120px;
+    width: 1100px;
+    background: white;
+    box-shadow: 1px 1px 5px 5px rgb(190, 190, 190);
+    padding: 25px 25px 25px 25px;
+    border-radius: 3px;
+
+}
+thead tr{
+    background-color: #990011ff;
+}
+th{
+    color: #fcf6f5ff;
+}
+.formSearch{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    margin: 30px 10px 0 10px;
+}
+.formSearch input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
+    padding: 10px;
+}
+.formSearch input:hover{
+    box-shadow: 1px 1px 5px 5px rgb(190, 190, 190);
+}
+.searchButton{
+    padding: 9px 10px 8px 10px;
+    margin-left: 10px;
+    background-color: #990011ff;
+    border: none;
+    border-radius: 3px;
+    color: #fcf6f5ff;
+    margin-bottom: 5px;
+}
+.searchButton:hover{
+    box-shadow: 1px 1px 5px 5px rgb(190, 190, 190);
+}
+.buttonnav{
+    position: relative;
+    top: 4px;
+    left: 200px;
+    width: 150px;
+    z-index: 9;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    transform: translateX(-32px);
+    left: 0;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #990011ff;
+    color: #fcf6f5ff;
+    text-align: center;
+    cursor: pointer;
+}
+ul li ul li:hover{
+    background-color: #990000ff;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover li{
+    display: block;
+}
+.inputFields{
+    display: block;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 20px;
+    position: absolute;
+}
+#submitbutton{
+    position: absolute;
+    top: 500px;
+}
+#submitbuttonadd{
+    position: absolute;
+    top: 500px;
+    left: 20px;
+}
+#formInput{
+    display: inline-block;
+    background-color: white;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+    position: absolute;
+    padding: 20px;
+    height: 550px;
+    width: 850px;
+    top: 10px;
+    left: 10px;
+}
+table{
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+#backButton{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+#updateButton{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+}
+#fname{
+    position: absolute;
+    left: 20px;
+    top: 100px;
+}
+#mname{
+    position: absolute;
+    left: 430px;
+    top: 100px;
+}
+#lname{
+    position: absolute;
+    top: 200px;
+    left: 20px;
+}
+#level{
+    left: 430px;
+    top: 200px;
+}
+#gender{
+    padding: 0;
+    top: 300px;
+    left: 20px;
+}
+#age{
+    top: 300px;
+    left: 430px;
+}
+#address{
+    top: 400px;
+    left: 20px;
+    width: 810px;
+}
+label[for="fname"]{
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+label[for="mname"]{
+    position: absolute;
+    top: 70px;
+    left: 430px;
+}
+label[for="lname"]{
+    position: absolute;
+    top: 170px;
+    left: 20px;
+}
+label[for="level"]{
+    position: absolute;
+    top: 170px;
+    left: 430px;
+}
+label[for="gender"]{
+    position: absolute;
+    top: 270px;
+    left: 20px;
+}
+label[for="age"]{
+    position: absolute;
+    top: 270px;
+    left: 430px;
+}
+label[for="address"]{
+    position: absolute;
+    top: 370px;
+    left: 20px;
+}
+.sideInfo{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    width: 450px;
+    height: 550px;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.imageDivision{
+    margin: 10px;
+    border: 5px solid black;
+    border-radius: 20px;
+    height: 50%;
+    width: 50%;
+}
+.imageDivision button{
+    position: absolute;
+    right: 90px;
+    top: 100px;
+}
+.imageDivision h4{
+    position: absolute;
+    top: 5px;
+    right: 60px;
+}
+.imageDivision img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.imageDivision input[type='file']{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 210px;
+}
+.buttons{
+    margin: 0;
+    position: absolute;
+    top: 84px;
+    right: 50px;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+.addstudents{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.optionGrade{
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 160px;
+    top: 59px;
+    left: 210px;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.optionGrade a, .optionGender a{
+    display: block;
+}
+#openOptionGrade, #openOptionGender {
+    font-weight: 900;
+}
+#deleteButton{
+    position: absolute;
+    top: 500px;
+    right: 90px;
+    width: 60%;
+}
+.viewBy{
+    background: white;
+    position: relative;
+    top: 140px;
+    z-index: 1;
+    width: 200px;
+    padding: 10px 2px 0 2px;
+    height: 300px;
+    border: 1px solid rgb(51, 103, 214);
+    left: 150px;
+    box-shadow: 1px 1px 10px 5px rgb(190, 190, 190);
+}
+.selectButton{
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    width: 90%;
+
+}
+.selectAll{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    width: 90%;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+}

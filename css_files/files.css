@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+*{
+    color: #4d5156;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    background: #f7f7f7;
+}
+.sidenav{
+    width: 150px;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    overflow-y: inherit;
+}
+.sidenav a{
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    color: #4d5156;
+    text-decoration: none;
+    padding: 15px 20px 10px 10px;
+    transition: ease-in-out 400ms;
+    border: 1px solid rgba(184, 184, 184, 0.315);
+}
+.sidenav a:hover{
+    background: #990011ff;
+    color: #fcf6f5ff;
+}
+.tabs{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color: #990011ff;
+}
+.folder-container{
+    display: grid;
+    position: absolute;
+    left: 350px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "modules files" "others guide";
+    row-gap: 60px;
+    column-gap: 60px;
+    margin: 30px auto;
+}
+.modulesFolder{
+    grid-area: modules;
+}
+.filesFolder{
+    grid-area: files;
+}
+.othersFolder{
+    grid-area: others;
+}
+.guideFolder{
+    grid-area: guide;
+}
+.folder{
+    text-align: center;
+    position: relative;
+    transition: all .4s ease-in-out;
+}
+.folder b{
+    background-color: black;
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 30px;
+    background-color: #f7f7f7;
+    pointer-events: none;
+    cursor: default;
+}
+.button{
+    padding: 80px;
+    width: 300px;
+    height: 150px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    border: none;
+    background-color: #990011ff;
+    color: #fcf6f5ff;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+.folder:hover{
+    transform: scale(1.1);
+}
+table{
+    width: 1000px;
+    height: auto;
+    max-width: 1000px;
+    border: 1px solid #990011ff;
+    background-color: #990011ff;
+}
+.Modules, .Others{
+    position: absolute;
+    top: 100px;
+    left: 180px;
+    display: none;
+}
+tr,th{
+    border-bottom: 1px solid #990011ff;
+    padding: 20px;
+}
+td{
+    padding: 10px;
+}
+th{
+    background: #990011ff;
+    color: #fcf6f5ff;
+}
+tr{
+    height: 50px;
+    background-color: white;
+}
+.Modules td a, .Others td a{
+    padding: 10px;
+    margin-left: 15px;
+    text-decoration: none;
+    background-color: white;
+    color: #990011ff;
+    transition: all .3s ease-in-out;
+}
+.Modules td a:hover, .Others td a:hover{
+    box-shadow: 5px 5px 10px 1px grey;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li{
+    float: right;
+    width: 150px;
+    height: 48px;
+    line-height: 50px;
+    background: #990011ff;
+    text-align: center;
+}
+ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    cursor: pointer;
+    background: #990011ff;
+}
+ul li a:hover{
+    background: #fcf6f5ff;
+    color: #990011ff;
+}
+ul li ul li{
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s ease;
+}
+ul li:hover ul li{
+    opacity: 1;
+    pointer-events: auto;
+}
+.addform{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.747);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 9;
+}
+.addform-content{
+    position: relative;
+    left: 450px;
+    top: 170px;
+    background: white;
+    width: 500px;
+    height: 300px;
+}
+.addform-header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #4d5156;
+}
+.addform-header .xbutton{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 50px;
+    border: none;
+    background-color: #990011ff;
+    color: #fcf6f5ff;
+}
+.addform-body{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: calc(100% - 70px);
+}
+.addform-body #file{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    top: 70%;
+
+}
+.addform-footer{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid #4d5156;
+}
+.addform-footer .submitbutton{
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    color: #990011ff;
+    background-color: #fcf6f5ff;
+    width: 100px;
+    height: 100%;
+    transition: all .4s ease-in-out;
+}
+.addform-footer .submitbutton:hover{
+    background-color: #990011ff;
+    color: #fcf6f5ff;
+}
+.button span{
+    position: absolute;
+    font-size: 15px;
+    color: #fcf6f5ff;
+    bottom: 0;
+    left: 10px;
+    font-weight: normal;
+}
+.addform-body input[type='text']{
+    width: 90%;
+    margin: 10px 0 0 20px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-bottom: 1px solid #4d5156;
+}
+.addform-body select{
+    width: 30%;
+    margin: 30px 0 0 20px;
+    border: none;
+    font-size: 1rem;
+    border-bottom: 1px solid #4d5156;
+}
